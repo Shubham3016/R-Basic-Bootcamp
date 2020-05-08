@@ -6,15 +6,15 @@
 # Numerics
 
 x <- 10
-class(x)
-typeof(x)
+class(x)  # numeric
+typeof(x) # double 
 
 # Integers 
 # Natural (whole) numbers are known as integers and are also part of the numeric class
 
 a <- 2L
-typeof(a)
-class(a)
+typeof(a) # integer
+class(a)  # integer
 
 # We use 2L Because by default R will decide for you how should store the data.
 # All the Arithmetic opeation are always conducted on double level because if you are not going to run the arithmetic opeartion 
@@ -22,7 +22,7 @@ class(a)
 
 # Double
 
-y <- 2.5
+y <- 2.5 # Double
 typeof(y)
 class(y)
 
@@ -31,12 +31,12 @@ class(y)
 # Boolean values (True and False) are part of the logical class.
 
 t <- TRUE
-typeof(t)
-class(t)
+typeof(t) # logical
+class(t) # logical
 
 f <- FALSE
-typeof(f)
-class(f)
+typeof(f) # logical
+class(f) # logical
 
 # Characters
 # Text/string values are known as characters in R. You use quotation marks to create a text character string:
@@ -44,13 +44,13 @@ class(f)
 char <- "R is programming Language"
 char
 
-typeof(char)
-class(char)
+typeof(char) # character
+class(char) # character
 
 # Complex
 z<-3+2i
-typeof(z)
-class(z)
+typeof(z) # complex
+class(z) # complex
 
 # Checking Data Type Classes
 # You can use the class() function to check the data type of a variable:
