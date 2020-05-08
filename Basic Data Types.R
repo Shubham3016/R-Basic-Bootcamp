@@ -23,7 +23,6 @@ class(a)
 # Double
 
 y <- 2.5
-
 typeof(y)
 class(y)
 
@@ -32,12 +31,10 @@ class(y)
 # Boolean values (True and False) are part of the logical class.
 
 t <- TRUE
-
 typeof(t)
 class(t)
 
 f <- FALSE
-
 typeof(f)
 class(f)
 
