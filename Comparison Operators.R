@@ -52,6 +52,7 @@ var < -2 # as we assign the variable here 1 so 1<-2 which returns FALSE
 5 != 5 # Returns FALSE Because Here 5 is equal to 5 which is RIght but NoT Equal to operator Returns False
 # FALSE 
 
+
 # Equal
 
 5 == 5 # Here 5 is equal to 5 returns TRUE
@@ -65,12 +66,12 @@ var < -2 # as we assign the variable here 1 so 1<-2 which returns FALSE
 # we can apply a comparison to an entire vector:
   
 v <- c(1,2,3,4,5)
-
 v < 2 
 # (1<2) TRUE,(2<2) FALSE,(3<3) FALSE,(4<2) FALSE,(5<2) FALSE
 
 v == 3
 # FALSE FALSE  TRUE FALSE FALSE
+
 
 # Here very important function which we can use while we get stuck in some code to understand about the  Function
 
