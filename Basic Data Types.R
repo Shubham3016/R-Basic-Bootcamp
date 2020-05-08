@@ -10,7 +10,6 @@ class(x)
 typeof(x)
 
 # Integers 
-
 # Natural (whole) numbers are known as integers and are also part of the numeric class
 
 a <- 2L
@@ -30,7 +29,6 @@ class(y)
 
 
 # Logicals
-
 # Boolean values (True and False) are part of the logical class.
 
 t <- TRUE
