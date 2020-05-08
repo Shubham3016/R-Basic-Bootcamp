@@ -2,6 +2,7 @@
 # R BASIC DATA TYPES
 
 # First We Start with the Numerics data type
+# ( <- ) Which is use to assign the variable
 
 # Numerics
 
