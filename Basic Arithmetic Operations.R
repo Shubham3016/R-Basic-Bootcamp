@@ -1,6 +1,6 @@
 # Basics of R
 
-1+1   # Addition of Two Numbers
+2+6   # Addition of Two Numbers
 
 5-2   # Subtraction of Two Numbers
 
@@ -16,4 +16,4 @@
 
 2^3  # Exponents 2*2*2=8
 
-(100 * 2) + (50 / 2) # Order of Operations
+(10 * 2) + (5 / 2) # Order of Operations
