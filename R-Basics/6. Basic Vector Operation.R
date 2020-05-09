@@ -12,6 +12,7 @@ class(vec1)
 # Vector of characters
 
 vec2 <- c('A','B','C')
+class(vec2)
 
 lvec <- c(TRUE,FALSE)
 class(lvec)
