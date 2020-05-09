@@ -53,6 +53,9 @@ z<-3+2i
 typeof(z) # complex
 class(z) # complex
 
+Re(x) # print real value in x
+Im(x) # print Imaginary Numbers
+
 # Checking Data Type Classes
 # You can use the class() function to check the data type of a variable:
 # typeof determines the (R internal) type or storage mode of any object
