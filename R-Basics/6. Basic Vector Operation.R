@@ -8,7 +8,7 @@ with each individual element separated by a comma.
 
 vec1 <- c(1,2,3,4,5)
 
-class(vec1) # numeric
+class(vec1)    # numeric
 is.numeric(v1) # Returns True given vector is in numeric format
 
 v1 <- c(1L,2L,3L,4L,5L)
@@ -20,16 +20,17 @@ is.double(v1)  # Returns False because it is in integer format
 # Vector of characters
 
 vec2 <- c('A','B','C')
-class(vec2) # character
-is.character(v1) # Returns True given vector is in character format
+class(vec2)       # character
+is.character(v1)  # Returns True given vector is in character format
 
 
 lvec <- c(TRUE,FALSE)
-class(lvec) #logical
-is.logical(lvec)  # Return True
+class(lvec)      # logical
+is.logical(lvec) # Return True
 
 v1 <- c(FALSE,2)
-class(v1) # numeric
+class(v1)       # numeric
+
 # as it class type return numeric beacause in vector v1 one variable is FALSE which is logical and one variable is 2 which is numeric 
 # but in vector it store it as numeric as there is numeric value in vector.
 
