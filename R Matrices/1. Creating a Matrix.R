@@ -2,7 +2,7 @@
  
 # A matrix will allow us to have a 2-dimensional data structure which contains elements consisting of the same data type.
 
-1:10   # 1,2,3,4,5,6,7,8,9,10
+1:10   
 
 [1]  1  2  3  4  5  6  7  8  9 10
 
@@ -28,6 +28,7 @@ matrix(ma) # use the Matrix function
 # matrix function called nrow which stands for number of rows:
 
 matrix(ma,nrow=2)
+
       [,1] [,2] [,3] [,4] [,5]
 [1,]    1    3    5    7    9
 [2,]    2    4    6    8   10
