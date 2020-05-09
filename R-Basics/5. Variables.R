@@ -41,7 +41,3 @@ x<-2  # <- Basic calculation
 y<-4
 z<-6
 x+y+z
-© 2020 GitHub, Inc.
-Terms
-Privacy
-S
