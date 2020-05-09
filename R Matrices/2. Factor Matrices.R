@@ -35,8 +35,7 @@ time
 
 [1] morning   afternoon morning   afternoon night     evening   night    
     Levels: morning < afternoon < evening < night
- 
-# 1] morning   afternoon morning   afternoon night     evening   night    
+     
 
 summary(times.of.day)
 
