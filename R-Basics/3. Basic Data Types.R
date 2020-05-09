@@ -17,9 +17,13 @@ a <- 2L
 typeof(a) # integer
 class(a)  # integer
 
+# a is a numeric vector. These are the most common kind. They are numeric objects and are treated as double precision real numbers.
+# To explicitly create integers, add a L at the end.
+
 # We use 2L Because by default R will decide for you how should store the data.
 # All the Arithmetic opeation are always conducted on double level because if you are not going to run the arithmetic opeartion 
 # and you are not going to add them or creating them then you can use L which stores in integer format
+
 
 # Double
 
@@ -59,3 +63,6 @@ Im(x) # print Imaginary Numbers
 # Checking Data Type Classes
 # You can use the class() function to check the data type of a variable:
 # typeof determines the (R internal) type or storage mode of any object
+
+
+# Don't get confused in 1L and 1 because most of the time we are going to use only numeric data type 
