@@ -12,12 +12,12 @@ head(cars)
 tail(cars)
 
 
-head(cars,n=10) # gives to total 10 rows in head
+head(cars,n=10) # gives to total 10 rows 
 
-tail(cars,n=10) # gives to total 10 rows in tail
+tail(cars,n=10) # gives to total 10 rows  
 
 str(cars)
 
-summary(cars) # Gives the summary of data 
+summary(cars) # Gives the summary of whole data in statistical format 
 
 
