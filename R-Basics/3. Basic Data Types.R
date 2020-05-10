@@ -4,6 +4,7 @@
 # ( <- ) Which is use to assign the variable
  
 # Numerics
+#----------------
  
 x <- 10
 
@@ -15,6 +16,7 @@ typeof(x)
  
 
 # Integers 
+# ----------------
 # Natural (whole) numbers are known as integers and are also part of the numeric class
  
 a <- 2L
@@ -34,6 +36,7 @@ class(a)
  
  
 # Double
+#-----------
  
 y <- 2.5
 
@@ -43,7 +46,10 @@ typeof(y)
 class(y)
 [1] "numeric"
  
+
+
 # Logicals
+#--------------
 # Boolean values (True and False) are part of the logical class.
  
 t <- TRUE
@@ -63,7 +69,9 @@ class(f)
 [1] "logical"
 
 
+
 # Characters
+#--------------
 
 # Text/string values are known as characters in R. You use quotation marks to create a text character string:
  
@@ -78,8 +86,9 @@ class(char)
 # [1] "character"
 
 
-# Complex
 
+# Complex
+#-----------------
 z<-3+2i
 typeof(z) 
 # [1] "complex"
@@ -92,10 +101,9 @@ Re(x) # print real value in x
 
 Im(x) # print Imaginary Numbers
 # [1] 0 
-> # Checking Data Type Classes
-> # You can use the class() function to check the data type of a variable:
-> # typeof determines the (R internal) type or storage mode of any object
-> 
-> 
-> # Don't get confused in 1L and 1 because most of the time we are going to use only numeric data type 
-> 
+
+# Checking Data Type Classes
+# You can use the class() function to check the data type of a variable:
+# typeof determines the (R internal) type or storage mode of any object
+ 
+# Don't get confused in 1L and 1 because most of the time we are going to use only numeric data type 
