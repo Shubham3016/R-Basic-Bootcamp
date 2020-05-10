@@ -26,7 +26,9 @@ Steve Graves,101.4,TRUE,MALE,A
 
 # Csv File format and save the data in .csv format which will be shown in Excel in following way 
 
-name  	temperature 	flu_status	 gender	   blood_type
-John    	98.1      	 FALSE	      MALE     	O
-Bob	      98.6      	 FALSE	      FEMALE   	AB
-Steve	    101.4	       TRUE         MALE	    A
+
+name    	temperature  	flu_status        gender	   blood_type
+John        98.1       	 FALSE	           MALE        	O
+Bob	        98.6      	 FALSE	           FEMALE       AB
+Steve	      101.4	        TRUE             MALE	        A
+
