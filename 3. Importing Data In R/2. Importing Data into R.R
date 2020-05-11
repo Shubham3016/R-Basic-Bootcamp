@@ -42,5 +42,17 @@ rm(filename) # here function rm is for removing object from environment
 m3<-read.csv("C:\\Users\\admin\\Documents\\R programming\\data.csv")
 
 
+# For Excel Files
+
+# Load the readxl package
+
+library(readxl)
+
+# Call info from the sheets using read.excel
+
+df <- read_excel('Sample-Sales-Data.xlsx',sheet='Sheet1')
+df
+# Output to csv
+
 # so This is how we can import data in R
 
