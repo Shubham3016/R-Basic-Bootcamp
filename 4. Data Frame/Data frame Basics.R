@@ -1,13 +1,9 @@
- # Dataframe
-
-One of the main tools for data analysis with R! Matrix inputs were limited because all the data inside of the matrix 
-had to be of the same data type (numerics, logicals, etc). With Dataframes we will be able to organize and mix data types 
-to create a very powerful data structure tool!
-
+# Dataframe
 '
 One of the main tools for data analysis with R! Matrix inputs were limited because all the data inside of the matrix 
 had to be of the same data type (numerics, logicals, etc). With Dataframes we will be able to organize and mix data types 
-to create a very powerful data structure tool!\n"
+to create a very powerful data structure tool!
+'
 
 data()
 
@@ -70,7 +66,7 @@ Ferrari Dino   19.7   6 145.0 175 3.62 2.770 15.5  0  1    5    6
 Maserati Bora  15.0   8 301.0 335 3.54 3.570 14.6  0  1    5    8
 Volvo 142E     21.4   4 121.0 109 4.11 2.780 18.6  1  1    4    2
 
-
+'
 We can use the str() to get the structure of a dataframe,which gives information  on the structure of the dataframe 
 and the data it contains, such as variable names and data types.
 '
@@ -184,6 +180,7 @@ df['days']
 We can use the subset() function to grab a subset of values from our data frame 
 based off some condition. So for example, imagin we wanted to grab the days 
 where it rained (rain=True), we can use the subset() function 
+'
 
 subset(df,subset=rain==TRUE)
 
@@ -191,14 +188,6 @@ subset(df,subset=rain==TRUE)
 1  mon 22.2 TRUE
 3  wed 23.0 TRUE
 5  fri 25.0 TRUE
-
-subset(df,subset=rain==TRUE)
-
-  days temp rain
-1  mon 22.2 TRUE
-3  wed 23.0 TRUE
-5  fri 25.0 TRUE
-
 
 subset(df,subset=temp>23)
 
