@@ -8,6 +8,7 @@ to create a very powerful data structure tool!
 data()
 
 datasets::mtcars
+'
                      mpg cyl  disp  hp drat    wt  qsec vs am gear carb
 Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
 Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
@@ -41,6 +42,7 @@ Ford Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4
 Ferrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6
 Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8
 Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2
+'
 
 # USing Data Frame
 
@@ -48,6 +50,7 @@ data <- mtcars
 
 head(data)
 
+'
                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
 Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
 Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
@@ -55,9 +58,11 @@ Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
 Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
 Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
 Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
+'
 
 tail(data)
 
+'
                 mpg cyl  disp  hp drat    wt qsec vs am gear carb
 Porsche 914-2  26.0   4 120.3  91 4.43 2.140 16.7  0  1    5    2
 Lotus Europa   30.4   4  95.1 113 3.77 1.513 16.9  1  1    5    2
@@ -65,6 +70,7 @@ Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.5  0  1    5    4
 Ferrari Dino   19.7   6 145.0 175 3.62 2.770 15.5  0  1    5    6
 Maserati Bora  15.0   8 301.0 335 3.54 3.570 14.6  0  1    5    8
 Volvo 142E     21.4   4 121.0 109 4.11 2.780 18.6  1  1    4    2
+'
 
 '
 We can use the str() to get the structure of a dataframe,which gives information  on the structure of the dataframe 
@@ -73,7 +79,9 @@ and the data it contains, such as variable names and data types.
 
 str(data)     # structure of dataset
 
-'data.frame':	32 obs. of  11 variables:
+
+'''
+data.frame':	32 obs. of  11 variables:
  $ mpg : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...
  $ cyl : num  6 6 4 6 8 6 8 4 4 6 ...
  $ disp: num  160 160 108 258 360 ...
@@ -85,15 +93,15 @@ str(data)     # structure of dataset
  $ am  : num  1 1 1 0 0 0 0 0 0 0 ...
  $ gear: num  4 4 4 3 3 3 3 4 4 4 ...
  $ carb: num  4 4 1 1 2 1 4 2 2 4 ...
-
-'
-We can use summary() to get a quick statistical summary of all  the columns of a DataFrame, depending on the data, 
-this may or may not be useful!
 '
 
+
+# We can use summary() to get a quick statistical summary of all  the columns of a DataFrame, depending on the data, 
+# this may or may not be useful!
+
+'
 summary(data) # sumaary of whole dataset
-
-
+'
       mpg             cyl             disp             hp             drat      
  Min.   :10.40   Min.   :4.000   Min.   : 71.1   Min.   : 52.0   Min.   :2.760  
  1st Qu.:15.43   1st Qu.:4.000   1st Qu.:120.8   1st Qu.: 96.5   1st Qu.:3.080  
@@ -115,6 +123,7 @@ summary(data) # sumaary of whole dataset
  Mean   :2.812  
  3rd Qu.:4.000  
  Max.   :8.000  
+'
 
 '
 We can create data frames using the data.frame() function and pass vectors as arguments,
@@ -128,6 +137,7 @@ rain<-c(T,F,T,F,T)
 df<-data.frame(days,temp,rain,stringsAsFactors = F)
 df
 
+'
   days temp  rain
 1  mon 22.2  TRUE
 2  tue 21.0 FALSE
@@ -135,15 +145,18 @@ df
 4  thu 24.3 FALSE
 5  fri 25.0  TRUE
 
+'
 
 df[1,]
 
+'
   days temp rain
 1  mon 22.2 TRUE
+'
 
 df[ ,1]
 
-[1] "mon" "tue" "wed" "thu" "fri"
+# [1] "mon" "tue" "wed" "thu" "fri"
 
 df[5,]
 
