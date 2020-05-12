@@ -50,8 +50,7 @@ data <- mtcars
 
 head(data)
 
-'
-                   mpg cyl disp  hp drat    wt  qsec vs am gear carb
+'                  mpg cyl disp  hp drat    wt  qsec vs am gear carb
 Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
 Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
 Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
@@ -62,8 +61,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
 
 tail(data)
 
-'
-                mpg cyl  disp  hp drat    wt qsec vs am gear carb
+'                mpg cyl  disp  hp drat    wt qsec vs am gear carb
 Porsche 914-2  26.0   4 120.3  91 4.43 2.140 16.7  0  1    5    2
 Lotus Europa   30.4   4  95.1 113 3.77 1.513 16.9  1  1    5    2
 Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.5  0  1    5    4
@@ -79,8 +77,7 @@ and the data it contains, such as variable names and data types.
 
 str(data)     # structure of dataset
 
-
-'''
+'
 data.frame':	32 obs. of  11 variables:
  $ mpg : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...
  $ cyl : num  6 6 4 6 8 6 8 4 4 6 ...
@@ -149,10 +146,9 @@ df
 
 df[1,]
 
-'
   days temp rain
 1  mon 22.2 TRUE
-'
+
 
 df[ ,1]
 
@@ -163,9 +159,11 @@ df[5,]
   days temp rain
 5  fri   25 TRUE
 
+
 df[,'rain']
 
 [1]  TRUE FALSE  TRUE FALSE  TRUE
+
 
 df[1:5,c('days','temp')]
 
@@ -176,9 +174,11 @@ df[1:5,c('days','temp')]
 4  thu 24.3
 5  fri 25.0
 
+
 df $ days          # simple way is we can choose $ sign to get column details
 
 [1] "mon" "tue" "wed" "thu" "fri"
+
 
 df['days']
 
@@ -202,14 +202,16 @@ subset(df,subset=rain==TRUE)
 3  wed 23.0 TRUE
 5  fri 25.0 TRUE
 
-subset(df,subset=temp>23)
+
+subset(df,subset=temp > 23)
 
   days temp  rain
 4  thu 24.3 FALSE
 5  fri 25.0  TRUE
 
 
-sorted.temp<-order(df['rain'])
+
+sorted.temp <- order(df['rain'])
 
 df[sorted.temp,]
 
@@ -220,11 +222,13 @@ df[sorted.temp,]
 3  wed 23.0  TRUE
 5  fri 25.0  TRUE
 
+
 sorted.temp
 
 [1] 2 4 1 3 5
 
-desc.temp<-order(-df['temp'])
+
+desc.temp <- order(-df['temp'])  # descending order 
 
 df[desc.temp,]
 
@@ -236,7 +240,7 @@ df[desc.temp,]
 2  tue 21.0 FALSE
 
 
-sort.temp<-order(df$temp)
+sort.temp <- order(df$temp) #sorting of data frame
 
 df[sort.temp,]
 
@@ -249,25 +253,24 @@ df[sort.temp,]
 
 # creating Data Frame
 
-empty<-data.frame()
+empty <- data.frame()
 empty
 
-data frame with 0 columns and 0 rows
+# data frame with 0 columns and 0 rows
 
 
-c1<-1:10
+c1 <- 1:10
 
 c1
 
 # [1]  1  2  3  4  5  6  7  8  9 10
 
-c2<-letters[1:10]
+c2 <- letters[1:10]
 c2
 
 # [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j"
 
-df<-data.frame(col.name.1=c1,col.name.2=c2)
-
+df <- data.frame(col.name.1=c1,col.name.2=c2)
 df
 
    col.name.1 col.name.2
