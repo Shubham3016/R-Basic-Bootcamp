@@ -1,7 +1,8 @@
  # Relational operator
- 
+' 
 Relational operators (comparison operators), are  for evaluating R objects in relation to one another
 it can be used with all data types and larger structures like matrices and data frames
+'
 
 # == Equal to
 
@@ -15,10 +16,12 @@ it can be used with all data types and larger structures like matrices and data 
 
 # >= GREATER THEN EQUAL TO
  
-TRUE==TRUE
+# EQUAL TO
+
+TRUE==TRUE 
 # [1] TRUE
 
-T==T
+T==T        
 # [1] TRUE
 
 FALSE==FALSE
