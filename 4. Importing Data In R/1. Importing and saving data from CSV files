@@ -1,0 +1,33 @@
+Importing and saving data from CSV files
+----------------------------------------------------
+
+It is very common for publically-available data to be stored in text files. Text files can be read on virtually any computer 
+or operating system, making the format nearly universal. 
+
+They can also be exported and imported from/to programs such as Microsoft Excel, 
+providing a quick and easy way to work with spreadsheet data.
+
+A tabular (as in "table") data file is structured in matrix form, in such a way that each line of text reflects
+one example, and each example has the same number of features.
+The feature values on each line are separated by a predefined symbol known as a delimiter. 
+Often, the first line of a tabular data file lists the names of the columns of data. This is called a header line.
+
+Perhaps the most common tabular text file format is the Comma-Separated Values (CSV) file, which as the name suggests,
+uses the comma as a delimiter. 
+The CSV files can be imported to and exported from many common applications.
+
+A CSV file representing the medical dataset constructed previously would look as follows:
+=-------------------------------------------------------------------------------------------
+
+name,temperature,flu_status,gender,blood_type
+John,98.1,FALSE,MALE,O
+Bob,98.6,FALSE,FEMALE,AB
+Steve Graves,101.4,TRUE,MALE,A
+
+# Csv File format and save the data in .csv format which will be shown in Excel in following way 
+
+name   temperature  flu_status  gender    blood_type
+John     98.1       FALSE        MALE        O
+Bob      98.6       FALSE        FEMALE      AB
+Steve    101.4      TRUE         MALE        A
+
