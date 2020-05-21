@@ -26,7 +26,6 @@ print("positive  number")
 
 # here we can see that 1 is greater then -6 so it returns positive number
 
-
 # Example 
 
 # Greater then
@@ -67,7 +66,7 @@ if(marks > 100){
   Pass <- TRUE
 }
 
-Pass
+print(Pass)
 
 # EXample
 
@@ -88,6 +87,16 @@ if (condition) {
 }
 '
 
+x <- 5
+if(x > 0){
+  print("Non-negative number")
+} else {
+  print("Negative number")
+}
+
+
+# Example 
+
 temp <- 30
 
 if(temp>90){      #(30>90)
@@ -97,13 +106,21 @@ if(temp>90){      #(30>90)
 }
 
 
-# else if
+x <- 10
+if(x>100){
+  ans<-"greater then 1"
+}else{
+  ans<-"less then or equal to 1"
+}
 
+print(ans)
+
+
+# else if
+# Nested If Else Statement
 '
-if we wanted more options to print out, rather than just two, 
-the if and the else? This is where we can use the else if statement to 
-add multiple condition checks, using else at the end to execute code
-if none of our conditions match up with and if or else if.
+if we wanted more options to print out, rather than just two,  the if and the else? This is where we can use the else if statement to 
+add multiple condition checks, using else at the end to execute code if none of our conditions match up with and if or else if.
 '
 
 temp <- 25
@@ -168,78 +185,3 @@ if(bread >= 11 & milk >=2){ # in if statement (10>=11)=F & (5>=2)=T (F & T)=F
 
 print(report)
 
-
-# Example: Write a script that prints "Hello" if the variable x is equal to 1:
-
-x <- 1
-
-if (x ==1){
-  print("Hello")
-}
-
-# Ex 1: Write a script that will print "Even Number" 
-# if the variable x is an even number, otherwise print "Not Even":
-
-x<-2
-if(x %% 2==0){
-  print('EVen Number')
-}else{
-  print("Not Even")
-}
-
-# Ex 2: Write a script that will print 'Is a Matrix' if the variable x is a matrix, 
-# otherwise print "Not a Matrix". Hint: You may want to check out help(is.matrix)
-
-x<-matrix()
-if(is.matrix(x)){
-  print('It Is Matrix')
-}else{
-  print("It is not")
-}
-
-
-x <- c(3,7,1)
-
-if (x[1] > x[2]){ # 3>7
-  fir <- x[1] # 3
-  sec <- x[2] # 7
-} else {
-  fir <- x[2] # 7
-  sec <- x[1] # 3
-}
-
-
-if ( x[3] > fir & x[3] > sec ) { #(1>3) & (1>7) F
-  thi <- sec # 3
-  sec <- fir # 7 
-  fir <- x[3] # 1
-} else if ( x[3] < fir & x[3] < sec ) { # (1<1 & 1<7) F
-  thi <- x[3] # 7
-} else {
-  thi <- sec # 1
-  sec <- x[3] #1
-}
-
-print(paste(fir, sec, thi))
-
-
-
-# Ex 4: Write a script that uses if,else if, and else statements to print the max 
-# element in a numeric vector with 3 elements.
-
-x <- c(20, 10, 1)
-
-if (x[1] > x[2] & x[1] > x[3] ) { #
-  print(x[1] )
-} else if (x[2] > x[3] ) {
-  print(x[2])
-} else {
-  print(x[3])
-}
-
-
-
-x<-c(20,10,1)
-if(x[1]>x[2]){
-  print(x[1])
-}
