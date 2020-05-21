@@ -74,7 +74,7 @@ if(1==1){
   print("hii")
 }
 
-# ELSE
+#---------------------- ELSE--------------------------
 
 # If we want to execute another block that occurs if the if statement is false, 
 # we can use an else statement to do this! It has the syntax:
@@ -116,12 +116,23 @@ if(x>100){
 print(ans)
 
 
-# else if
+# ----------------------------ELSE IF-------------------------
+
 # Nested If Else Statement
 '
 if we wanted more options to print out, rather than just two,  the if and the else? This is where we can use the else if statement to 
 add multiple condition checks, using else at the end to execute code if none of our conditions match up with and if or else if.
 '
+
+
+x <- 0
+
+if (x < 0) {
+  print("Negative number")
+} else if (x > 0) {
+  print("Positive number")
+} else print("Zero")
+
 
 temp <- 25
 
