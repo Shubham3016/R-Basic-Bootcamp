@@ -134,3 +134,16 @@ rain<-c(T,F,T,F,T)
 
 df<-data.frame(days,temp,rain,stringsAsFactors = F)
 df
+
+# EXAMPLE
+
+df<-data.frame(x=1:3,y=c("a","b","c"))
+df
+
+data.frame(height=c(150,160),weight=c(65,72))
+
+df<-data.frame(x=1:3,y=c("a","b","c"))#1st row 2nd column
+df
+
+df<-data.frame(x=1:3,y=c("a","b","c"))
+df
