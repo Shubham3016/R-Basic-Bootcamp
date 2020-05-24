@@ -55,3 +55,15 @@ min(v1)  #1 Minimum Element
 # Product of elements
 
 prod(v1)  #(1*3*4)=12
+
+
+var <- 'a variable'
+cat("my variable is :",var)
+
+var <- 25
+cat('my number is',var)
+
+# Could also use
+
+print(paste0("variable is ",var))
+
