@@ -4,9 +4,7 @@ What is a Function in R?
 A function, in a programming environment, is a set of instructions.
 A programmer builds a function to avoid repeating the same task, or reduce complexity.
 
-
-Formally, a function is a useful device that groups together a set of statements 
-so they can be run more than once. 
+Formally, a function is a useful device that groups together a set of statements  so they can be run more than once. 
 They can also let us specify parameters that can serve as inputs to the functions.
 '
 
@@ -105,10 +103,8 @@ demo(y)
 
 y
 
-
-
-
 # Sets default of exponent to 2 (just square)
+
 MyThirdFun <- function(n, y = 2) 
 {
   # Compute the power of n to the y
