@@ -24,5 +24,5 @@ grep('a',v)
 # [1] 1
 
 grep('q',v)
-integer(0)
+# integer(0)
  
